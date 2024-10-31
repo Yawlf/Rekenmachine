@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekenmachine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Rekenmachine</h1>
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button onclick="wisScherm()" class="clear">C</button>
+            <button onclick="voegNummerToe('7')">7</button>
+            <button onclick="voegNummerToe('8')">8</button>
+            <button onclick="voegNummerToe('9')">9</button>
+        </div>
+        <div class="button-container">
+            <button onclick="voegOperatorToe('+')" class="operator">+</button>
+            <button onclick="voegNummerToe('4')">4</button>
+            <button onclick="voegNummerToe('5')">5</button>
+            <button onclick="voegNummerToe('6')">6</button>
+        </div>
+        <div class="button-container">
+            <button onclick="voegOperatorToe('-')" class="operator">-</button>
+            <button onclick="voegNummerToe('1')">1</button>
+            <button onclick="voegNummerToe('2')">2</button>
+            <button onclick="voegNummerToe('3')">3</button>
+        </div>
+        <div class="button-container">
+            <button onclick="voegOperatorToe('*')" class="operator">*</button>
+            <button onclick="voegNummerToe('0')">0</button>
+            <button onclick="voegOperatorToe('/')" class="operator">/</button>
+            <button onclick="bereken()">=</button>
+        </div>
+        <div class="history" id="geschiedenis">Last Calculation: None</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
